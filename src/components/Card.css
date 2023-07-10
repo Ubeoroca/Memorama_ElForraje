@@ -1,0 +1,49 @@
+.card-image {
+    width: 105px; 
+    height: 130px;
+    border-radius: 10px;
+}
+
+.card {
+    display: inline-block;
+    margin: 3px;
+    width: 105px; 
+    height: 130px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ .card-p{
+    /* text-align: center; */
+   /*  text-justify: distribute-all-lines; */
+    margin: 1px;
+    width: 105px; 
+    height: 130px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    overflow:auto;
+    padding: 1px;
+}
+
+.card-p::-webkit-scrollbar{
+    width: 1px;
+    height: 1px;
+}
+
+.card-p::-webkit-scrollbar-thumb{
+    background-color: rgb(19, 164, 3);
+    border-radius: 5px;
+}
+
+.card-p::-webkit-scrollbar-button{
+    display: none;
+}
+
+.card:hover{
+    transform: scale(1.17);
+/*     font-size: 12px;
+    margin:5px;
+    width: 105px; 
+    height: 130px;
+    border-radius: 5px; */
+}
