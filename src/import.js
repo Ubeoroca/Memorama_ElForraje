@@ -47,7 +47,7 @@ const preguntasObj = [
       name: "¿Qué son las tareas de alto riesgo?",
       key: 12
     },
-/*    {
+   {
       name: "¿Qué es una emergencia?",
       key: 13
     },
@@ -78,7 +78,7 @@ const preguntasObj = [
     {
       name: "¿Qué riesgos incluye el riesgo de condiciones de seguridad?",
       key: 20
-    }  */
+    } 
   ];
 
 
@@ -131,7 +131,7 @@ const preguntasObj = [
       name: "Actividades que por su alto grado de peligrosidad pueden llegar a generar accidentes graves o la muerte",
       key: 12
     },
-/*    {
+   {
       name: "Situación imprevista que requiere una especial atención y debe solucionarse lo más pronto posible.",
       key: 13
     },
@@ -162,7 +162,7 @@ const preguntasObj = [
     {
       name: "Accidentes de tránsito, eléctrico, locativo, público, mecánico, tareas de alto riesgo (alturas, caliente, energías peligrosas, espacios confinados).",
       key: 20
-    }  */
+    } 
   ];
 
 export  {preguntasObj, respuestasObj};

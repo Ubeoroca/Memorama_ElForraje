@@ -4,8 +4,8 @@ import Logo from './assets/Forraje.jpg';
 import { useEffect, useState } from 'react';
 import {preguntasObj, respuestasObj} from "./import"
 import updateClock from "./components/tiempo"
-var puntosA = 0;
-var puntosB = 0;
+ var puntos = 0;
+
 
 const App = () => {
   /* seteamos dos estados, uno para preguntas y otro para respuestas */
@@ -29,8 +29,8 @@ const App = () => {
 /* cuando montamos el componente , mezclamos las preguntas y las respuestas que nos trajimos del import,
 luego las seteamos en los estados correspondientes*/
   useEffect(()=>{
-//    shuffleArray(preguntasObj);
-//    shuffleArray(respuestasObj);
+    shuffleArray(preguntasObj);
+    shuffleArray(respuestasObj);
     setPreguntas(preguntasObj);
     setRespuestas(respuestasObj)
   },[])
@@ -57,10 +57,10 @@ luego las seteamos en los estados correspondientes*/
       const match = primerIntento.key === segundoIntento.key;
       match ? disableCards() : unflipCards();
       if (primerIntento && segundoIntento && match){
-        puntosA++
-      }else if(primerIntento && segundoIntento && !match){
+        puntos++
+      }/* else if(primerIntento && !segundoIntento && !match){
         puntosB++
-      }
+      } */
     } 
   }
 
@@ -85,9 +85,10 @@ luego las seteamos en los estados correspondientes*/
     <div className='app'>
     <header>
     <div className='chronometer'>
-      <strong><h1>EQUIPO - A &#160; &#160; </h1></strong><h2>{puntosA}</h2>
+ 
+      {/* <strong><h1>INDESTRUCTIBLES &#160; &#160; </h1></strong><h2>{}</h2> */}
       <img src={Logo} alt="El Forraje"/>
-      <strong><h1>EQUIPO - B &#160; &#160; </h1></strong><h2>{puntosB}</h2>
+      <strong><h1>Puntaje &#160; &#160; </h1></strong><h2>{puntos}</h2>
     </div>
     <span id="tiempo"></span>
     </header>

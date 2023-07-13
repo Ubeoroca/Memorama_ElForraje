@@ -9,7 +9,7 @@ const Card = ({ name, clave, flipCard, unflippedCards, disabledCards }) => {
 
   useEffect(() => {
     if (unflippedCards.includes(clave)) {
-      setTimeout(() => setIsFlipped(false), 5000);
+      setTimeout(() => setIsFlipped(false), 4500);
     }
   }, [unflippedCards]);
 
